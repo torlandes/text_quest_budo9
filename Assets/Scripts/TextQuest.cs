@@ -1,15 +1,24 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class TextQuest : MonoBehaviour
 {
     #region Variables
 
+    [Header("UI")]
     [SerializeField] private TMP_Text _descriptionLabel;
     [SerializeField] private TMP_Text _answerLabel;
-
+    [SerializeField] private Button _button1;
+    [SerializeField] private Button _button2;
+    [SerializeField] private Button _button3;
+    [SerializeField] private Button _button4;
+    
+    [Header("Settings")]
     [SerializeField] private Step _startStep;
 
+    [Header("DEBUG")]
     [SerializeField] private Step _currentStep;
 
     #endregion
