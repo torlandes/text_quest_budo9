@@ -2131,12 +2131,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _descriptionLabel: {fileID: 829299237}
   _answerLabel: {fileID: 127737221}
-  _button1: {fileID: 0}
-  _button2: {fileID: 0}
-  _button3: {fileID: 0}
-  _button4: {fileID: 0}
+  _button1: {fileID: 746990156}
+  _button2: {fileID: 1302379238}
+  _button3: {fileID: 1966609343}
+  _button4: {fileID: 1389508597}
   _startStep: {fileID: 146323658}
-  _currentStep: {fileID: 0}
+  _currentStep: {fileID: 146323658}
 --- !u!4 &1632800966
 Transform:
   m_ObjectHideFlags: 0
