@@ -1,6 +1,8 @@
 ﻿using UnityEngine;
 
-public class Step : MonoBehaviour
+// [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/SpawnManagerScriptableObject")]
+[CreateAssetMenu(fileName = nameof(StepConfig), menuName = "Configs/Game/Step Config")]
+public class StepConfig : ScriptableObject
 {
     #region Variables
 
@@ -9,7 +11,7 @@ public class Step : MonoBehaviour
     [TextArea(3, 10)]
     [SerializeField] private string _description;
 
-    [SerializeField] private Step[] _nextStep;
+    [SerializeField] private StepConfig[] _nextStep;
 
     #endregion
 
@@ -17,7 +19,7 @@ public class Step : MonoBehaviour
 
     public string Answers => _answers;
     public string Description => _description;
-    public Step[] NextSteps => _nextStep;
+    public StepConfig[] NextSteps => _nextStep;
 
     #endregion
 }

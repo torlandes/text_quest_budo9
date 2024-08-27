@@ -17,7 +17,9 @@ public class GameOverSreen : MonoBehaviour
     private void Start()
     {
         _startButton.onClick.AddListener(EnterGame);
-        _headerLabel.text = $"Game Over! \n Your moves: {TextQuest.MovesCount} ";
+        
+        Statistics statistics = FindObjectOfType<Statistics>();
+        _headerLabel.text = $"Game Over! \n Your moves: {statistics.MovesCount} ";
     }
 
     #endregion
